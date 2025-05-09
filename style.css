@@ -6,7 +6,6 @@ body {
     padding: 20px;
     text-align: center;
 }
-
 .controls {
     margin-bottom: 20px;
     display: flex;
@@ -14,7 +13,6 @@ body {
     justify-content: center;
     gap: 20px;
 }
-
 #matrixContainer {
     overflow-x: auto;
     background: white;
@@ -22,12 +20,10 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 table {
     border-collapse: collapse;
     margin: 0 auto;
 }
-
 th, td {
     border: 1px solid #ccc;
     padding: 4px;
@@ -35,67 +31,37 @@ th, td {
     font-size: 12px;
     min-width: 50px;
 }
-
 th:first-child {
     min-width: 80px;
     max-width: 80px;
     font-weight: bold;
     background-color: #e2e3e5;
 }
-
-td.negative {
-    background-color: #f88;
-}
-
-td.medium {
-    background-color: #ffd966;
-}
-
-td.positive {
-    background-color: #b6d7a8;
-}
-
+td.negative { background-color: #f88; }
+td.medium { background-color: #ffd966; }
+td.positive { background-color: #b6d7a8; }
+#matrixTop, #matrixBottom { display: none; }
 @media (max-width: 768px) {
-    h1 {
-        font-size: 18px;
-    }
-
+    h1 { font-size: 18px; }
     .controls {
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
-
     table {
         font-size: 10px;
         max-width: 100vw;
         overflow-x: auto;
     }
-
     th, td {
         min-width: 38px;
         padding: 2px;
     }
-
     th:first-child {
         min-width: 70px;
         max-width: 70px;
     }
-
-    #matrixContainer {
-        padding: 5px;
-        overflow-x: auto;
-    }
-}
-
-#matrixTop, #matrixBottom {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    #matrixSingle {
-        display: none;
-    }
+    #matrixSingle { display: none; }
     #matrixTop, #matrixBottom {
         display: block;
         margin-bottom: 20px;
