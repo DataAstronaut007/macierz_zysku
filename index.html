@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -15,44 +14,28 @@
 
         <label for="extraCost">Koszty (20–50 zł):</label>
         <select id="extraCost" onchange="updateMatrix()">
-<option value="20">20 zł</option>
-<option value="30">30 zł</option>
-<option value="40">40 zł</option>
-<option value="50">50 zł</option>
+            <option value="20">20 zł</option>
+            <option value="30">30 zł</option>
+            <option value="40">40 zł</option>
+            <option value="50">50 zł</option>
         </select>
 
         <label for="gameCost">Gry (0–200 zł):</label>
         <select id="gameCost" onchange="updateMatrix()">
-<option value="0">0 zł</option>
-<option value="10">10 zł</option>
-<option value="20">20 zł</option>
-<option value="30">30 zł</option>
-<option value="40">40 zł</option>
-<option value="50">50 zł</option>
-<option value="60">60 zł</option>
-<option value="70">70 zł</option>
-<option value="80">80 zł</option>
-<option value="90">90 zł</option>
-<option value="100">100 zł</option>
-<option value="110">110 zł</option>
-<option value="120">120 zł</option>
-<option value="130">130 zł</option>
-<option value="140">140 zł</option>
-<option value="150">150 zł</option>
-<option value="160">160 zł</option>
-<option value="170">170 zł</option>
-<option value="180">180 zł</option>
-<option value="190">190 zł</option>
-<option value="200">200 zł</option>
+            <option value="0">0 zł</option>
+            <option value="50">50 zł</option>
+            <option value="100">100 zł</option>
+            <option value="150">150 zł</option>
+            <option value="200">200 zł</option>
         </select>
 
         <label><input type="checkbox" id="pracaCheckbox" checked onchange="updateMatrix()"> Praca (40 zł)</label>
     </div>
+
     <div id="matrixContainer">
         <div id="matrixSingle"></div>
-        <div id="matrixTop"></div>
-        <div id="matrixBottom"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
