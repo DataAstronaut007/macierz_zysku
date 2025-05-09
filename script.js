@@ -98,4 +98,3 @@ function matrixCell(x, y, allegroFraction, extraCost, gameCost, pracaCost) {
 
 window.addEventListener("resize", updateMatrix);
 window.addEventListener("load", updateMatrix);
-// skrócony JS – pełny kod został wcześniej wygenerowany i działa poprawnie
