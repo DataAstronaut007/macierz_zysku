@@ -88,6 +88,10 @@ td.positive {
     }
 }
 
+#matrixTop, #matrixBottom {
+    display: none;
+}
+
 @media (max-width: 768px) {
     #matrixSingle {
         display: none;
@@ -95,14 +99,5 @@ td.positive {
     #matrixTop, #matrixBottom {
         display: block;
         margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 769px) {
-    #matrixTop, #matrixBottom {
-        display: none;
-    }
-    #matrixSingle {
-        display: block;
     }
 }
