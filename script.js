@@ -1,3 +1,4 @@
+
 const zakupValues = [300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1100, 1200, 1300, 1400, 1500, 1600];
 const sprzedazValues = [600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600];
 
@@ -50,4 +51,3 @@ function matrixCell(x, y, allegroFraction, extraCost, gameCost, pracaCost) {
 
 window.addEventListener("resize", updateMatrix);
 window.addEventListener("load", updateMatrix);
-

@@ -31,16 +31,19 @@ th, td {
     font-size: 12px;
     min-width: 50px;
 }
+th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f3f3f3;
+    z-index: 2;
+}
 th:first-child {
-    min-width: 80px;
-    max-width: 80px;
-    font-weight: bold;
-    background-color: #e2e3e5;
+    z-index: 3;
 }
 td.negative { background-color: #f88; }
 td.medium { background-color: #ffd966; }
 td.positive { background-color: #b6d7a8; }
-#matrixTop, #matrixBottom { display: none; }
+
 @media (max-width: 768px) {
     h1 { font-size: 18px; }
     .controls {
@@ -51,19 +54,13 @@ td.positive { background-color: #b6d7a8; }
     table {
         font-size: 10px;
         max-width: 100vw;
-        overflow-x: auto;
     }
     th, td {
         min-width: 38px;
         padding: 2px;
     }
     th:first-child {
-        min-width: 70px;
-        max-width: 70px;
-    }
-    #matrixSingle { display: none; }
-    #matrixTop, #matrixBottom {
-        display: block;
-        margin-bottom: 20px;
+        min-width: 60px;
+        max-width: 60px;
     }
 }
